@@ -16,7 +16,22 @@ $(document).ready(function() {
  */
 
 MatchGame.generateCardValues = function () {
+var sequential = []
 
+for (var value = 1; value <= 8; value++) {
+  sequential.push('value');
+  sequential.push('value');
+}
+
+var random = []
+
+while (sequential.length > 0) {
+  var randomIndex = math.floor(math.random() * 8);
+  var randomValue = sequential.splice(randomIndex, 1)[0];
+  random.push(randomValue);
+}
+
+return random;
 };
 
 /*
