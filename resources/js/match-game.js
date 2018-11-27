@@ -26,7 +26,7 @@ for (var value = 1; value <= 8; value++) {
 var random = []
 
 while (sequential.length > 0) {
-  var randomIndex = math.floor(math.random() * 8);
+  var randomIndex = Math.floor(Math.random() * 8);
   var randomValue = sequential.splice(randomIndex, 1)[0];
   random.push(randomValue);
 }
